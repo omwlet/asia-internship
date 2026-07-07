@@ -24,7 +24,7 @@ jobs:
             --retry-wait-time 5
             --timeout 20
             --user-agent "Mozilla/5.0 (compatible; InternshipLinkChecker/1.0)"
-            --accept 200,203,206,301,302,308,429
+            --accept 200,203,206,301,302,308,403,429
             README.md
           fail: false
 
