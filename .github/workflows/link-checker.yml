@@ -1,0 +1,37 @@
+name: Weekly Broken Link Check
+
+on:
+  schedule:
+    - cron: "0 2 * * 1"   # Every Monday 02:00 UTC (~09:00–11:00 across Asia)
+  workflow_dispatch:        # Allow manual runs from the Actions tab
+
+permissions:
+  issues: write             # Needed to open the failure-report issue
+
+jobs:
+  linkChecker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run lychee link checker
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # Check markdown files; retry to reduce false positives from rate limits
+          args: >-
+            --max-retries 3
+            --retry-wait-time 5
+            --timeout 20
+            --user-agent "Mozilla/5.0 (compatible; InternshipLinkChecker/1.0)"
+            --accept 200,203,206,301,302,308,429
+            README.md
+          fail: false
+
+      - name: Open issue if broken links found
+        if: steps.lychee.outputs.exit_code != 0
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "🔗 Weekly link check: broken links detected"
+          content-filepath: ./lychee/out.md
+          labels: expired-link, automated-report
