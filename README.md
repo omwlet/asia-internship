@@ -18,6 +18,7 @@ A community-maintained list of **2026 tech internships** located in **Asia** or 
 
 | Company | Role | Location | Application Link / Status | Date Posted |
 |---------|------|----------|---------------------------|-------------|
+| Shopee | Data Analytics & AI Automation Intern | 🇹🇭 Bangkok, Thailand | 🟢 [Apply](https://careers.shopee.co.th/job-detail/J02162462/1) | 2026-07-08 |
 | Rakuten | TECH Camp — Summer Long-term Internship 2026 (SWE, Infra, Data, Security) | 🇯🇵 Japan | 🟡 [Apply by 2026-07-15](https://global.rakuten.com/corp/careers/graduates/event/) | 2026-07-07 |
 | Agoda | Full-Stack Software Engineering Intern (Summer 2026) | 🇹🇭 Bangkok, Thailand | 🟢 [Apply](https://careersatagoda.com/job/7366718-summer-internship-2026-full-stack-internship-bkk/) | 2026-07-07 |
 | Agoda | Infrastructure Intern (Summer 2026) | 🇹🇭 Bangkok, Thailand | 🟢 [Apply](https://careersatagoda.com/job/7366735-summer-internship-2026-infrastructure-bkk/) | 2026-07-07 |
@@ -28,7 +29,7 @@ A community-maintained list of **2026 tech internships** located in **Asia** or 
 | Mercari | Software Engineer Intern (Mercari / Merpay / Mercoin) | 🇯🇵 Tokyo, Japan (remote OK within Japan) | 🟢 [Apply](https://apply.workable.com/mercari/j/FE4DFD158A) | 2026-07-07 |
 | GoTo (Gojek & Tokopedia) | Full Stack Engineer Intern (GoSquads) | 🇮🇩 Jakarta, Indonesia | 🟢 [Apply](https://www.gojek.io/careers) | 2026-07-07 |
 | VNG | VNG Tech Fresher / Internship Program | 🇻🇳 Ho Chi Minh City, Vietnam | 🟢 [Apply](https://career.vng.com.vn/danh-cho-sinh-vien/13-vng-tech-fresher) | 2026-07-07 |
-| Shopee | Data Analytics & AI Automation Intern | 🇹🇭 Bangkok, Thailand | 🟢 [Apply](https://careers.shopee.co.th/job-detail/J02162462/1?channel=10001) |2026-07-08|
+
 *Sorted by `Date Posted` (newest first). Closed roles are marked 🔴 and pruned monthly.*
 
 ---
