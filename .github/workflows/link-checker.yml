@@ -35,3 +35,50 @@ jobs:
           title: "🔗 Weekly link check: broken links detected"
           content-filepath: ./lychee/out.md
           labels: expired-link, automated-report
+
+  # Deep-checks each listing (soft-404 detection) and opens a PR that marks
+  # dead rows 🔴 Closed — a human reviews and merges; nothing is auto-deleted.
+  autoClose:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Mark dead listings as closed
+        id: close
+        run: |
+          python scripts/check_links.py --fix | tee report.txt
+          {
+            echo "report<<EOF"
+            cat report.txt
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+          rm report.txt
+
+      - name: Open PR marking rows closed
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "Mark dead listings as closed (weekly link check)"
+          title: "🔴 Auto-close: dead application links detected"
+          body: |
+            The weekly deep link check found listings whose application links
+            appear dead or explicitly closed:
+
+            ```
+            ${{ steps.close.outputs.report }}
+            ```
+
+            Bot-blocked responses (401/403/429/503) are ignored, so these are
+            high-confidence. Review and merge to mark the rows 🔴 Closed.
+          branch: auto/close-dead-listings
+          delete-branch: true
+          labels: expired-link, automated-report

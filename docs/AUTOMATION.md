@@ -1,23 +1,41 @@
-# Automation Plan: Broken Link Checker
+# Automation: How This Repo Maintains Itself
 
-**Goal:** catch dead application links automatically instead of waiting for user reports.
+**Goal:** keep the list accurate with minimal manual work, while a human always
+approves changes before they land.
 
-## Approach (simplest → most robust)
+## What runs today
 
-### Phase 1 — Off-the-shelf link checker (current)
+### PR format validation — on every pull request
 
-Use [`lycheeverse/lychee-action`](https://github.com/lycheeverse/lychee-action) on a weekly cron
-(see [`.github/workflows/link-checker.yml`](../.github/workflows/link-checker.yml)).
-It scans the README, follows redirects, and auto-opens a GitHub Issue listing failures.
-Zero custom code to maintain.
+[`validate-pr.yml`](../.github/workflows/validate-pr.yml) runs
+[`scripts/validate_table.py`](../scripts/validate_table.py) whenever a PR touches
+the README. It rejects rows with the wrong column count, bad dates, missing
+status emoji, missing application links, or link shorteners — so maintainers
+only review substance, not formatting.
 
-### Phase 2 — Custom Python script (when Phase 1 isn't enough)
+### Weekly link check — every Monday
 
-ATS pages often return HTTP 200 even when a job is closed (soft-404s). The script in
-[`scripts/check_links.py`](../scripts/check_links.py) parses the README table, requests each link,
-and additionally scans the response body for phrases like *"no longer accepting applications"*
-or *"job not found"*. Run it from the same weekly workflow and pipe its output into the
-auto-created issue.
+[`link-checker.yml`](../.github/workflows/link-checker.yml) runs two jobs:
+
+1. **lychee** scans every link in the README and opens an issue listing any
+   that fail outright (404s, DNS errors).
+2. **autoClose** runs [`scripts/check_links.py`](../scripts/check_links.py) `--fix`,
+   which also catches **soft-404s** — ATS pages that return HTTP 200 but say
+   *"no longer accepting applications"*. Dead rows are rewritten to 🔴 Closed
+   and submitted as a **pull request** for a maintainer to review and merge.
+
+> ⚙️ One-time setup: the autoClose job needs
+> **Settings → Actions → General → Workflow permissions →
+> ✅ "Allow GitHub Actions to create and approve pull requests"**.
+
+## Possible next phase — auto-discovering new listings
+
+Companies on Greenhouse or Lever expose public JSON APIs
+(e.g. `https://boards-api.greenhouse.io/v1/boards/agoda/jobs`,
+`https://api.lever.co/v0/postings/GoToGroup`). A weekly script could filter
+those for "intern" roles not yet in the table and open a PR proposing them.
+API-based, so no scraping or bot-blocking issues — but only covers companies
+on those ATS platforms.
 
 ## Key operational choices
 
