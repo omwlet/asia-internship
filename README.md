@@ -28,7 +28,7 @@ A community-maintained list of **2026 tech internships** located in **Asia** or 
 | Mercari | Software Engineer Intern (Mercari / Merpay / Mercoin) | 🇯🇵 Tokyo, Japan (remote OK within Japan) | 🟢 [Apply](https://apply.workable.com/mercari/j/FE4DFD158A) | 2026-07-07 |
 | GoTo (Gojek & Tokopedia) | Full Stack Engineer Intern (GoSquads) | 🇮🇩 Jakarta, Indonesia | 🟢 [Apply](https://www.gojek.io/careers) | 2026-07-07 |
 | VNG | VNG Tech Fresher / Internship Program | 🇻🇳 Ho Chi Minh City, Vietnam | 🟢 [Apply](https://career.vng.com.vn/danh-cho-sinh-vien/13-vng-tech-fresher) | 2026-07-07 |
-
+| Shopee | Data Analytics & AI Automation Intern | 🇹🇭 Bangkok, Thailand | 🟢 [Apply](https://careers.shopee.co.th/job-detail/J02162462/1?channel=10001) |2026-07-08|
 *Sorted by `Date Posted` (newest first). Closed roles are marked 🔴 and pruned monthly.*
 
 ---
