@@ -18,9 +18,9 @@ A community-maintained list of **2026 tech internships** located in **Asia** or 
 
 | Company | Role | Location | Application Link / Status | Date Posted |
 |---------|------|----------|---------------------------|-------------|
-| TestCo BadDate | Software Engineer Intern | 🇹🇭 Bangkok, Thailand | 🟢 [Apply](https://example.com/jobs/1) | 8 August 2026 |
-| TestCo Shortener | Backend Intern | 🇸🇬 Singapore | 🟢 [Apply](https://bit.ly/fake-job) | 2026-08-04 |
-| TestCo NoLink | Data Intern | 🇯🇵 Tokyo, Japan | 🟢 Apply via email | 2026-08-04 |
+| TestCo BadDate | Software Engineer Intern | 🇹🇭 Bangkok, Thailand | 🟢 [Apply](https://example.com/jobs/1) | 2026-08-04 |
+| TestCo Shortener | Backend Intern | 🇸🇬 Singapore | 🟢 [Apply](https://example.com/jobs/2) | 2026-08-04 |
+| TestCo NoLink | Data Intern | 🇯🇵 Tokyo, Japan | 🟢 [Apply](https://example.com/jobs/3) | 2026-08-04 |
 | Shopee | Data Analytics & AI Automation Intern | 🇹🇭 Bangkok, Thailand | 🟢 [Apply](https://careers.shopee.co.th/job-detail/J02162462/1) | 2026-07-08 |
 | Rakuten | TECH Camp — Summer Long-term Internship 2026 (SWE, Infra, Data, Security) | 🇯🇵 Japan | 🟡 [Apply by 2026-07-15](https://global.rakuten.com/corp/careers/graduates/event/) | 2026-07-07 |
 | Agoda | Full-Stack Software Engineering Intern (Summer 2026) | 🇹🇭 Bangkok, Thailand | 🟢 [Apply](https://careersatagoda.com/job/7366718-summer-internship-2026-full-stack-internship-bkk/) | 2026-07-07 |
