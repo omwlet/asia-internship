@@ -28,14 +28,35 @@ only review substance, not formatting.
 > **Settings → Actions → General → Workflow permissions →
 > ✅ "Allow GitHub Actions to create and approve pull requests"**.
 
-## Possible next phase — auto-discovering new listings
+### Listing discovery — every Thursday
 
-Companies on Greenhouse or Lever expose public JSON APIs
-(e.g. `https://boards-api.greenhouse.io/v1/boards/agoda/jobs`,
-`https://api.lever.co/v0/postings/GoToGroup`). A weekly script could filter
-those for "intern" roles not yet in the table and open a PR proposing them.
-API-based, so no scraping or bot-blocking issues — but only covers companies
-on those ATS platforms.
+[`discover-listings.yml`](../.github/workflows/discover-listings.yml) runs
+[`scripts/discover_listings.py`](../scripts/discover_listings.py), which polls the
+public Greenhouse and Lever APIs for every board in
+[`scripts/sources.json`](../scripts/sources.json) and opens a PR proposing rows
+that pass all three filters:
+
+| Filter | How it works |
+|---|---|
+| **Is an internship** | Word-boundary match, so *International* and *Internal Audit* are not mistaken for *Intern*. Lever's `commitment: Internship` field is used when present. |
+| **Is tech** | Broad keywords in the job title; only unambiguous ones in the department, because a logistics firm's "Quality Assurance" team inspects parcels, not code. |
+| **Is Asia or remote** | Country and city lookup that turns `Subang Jaya, Selangor, Malaysia` into `🇲🇾 Subang Jaya, Malaysia`. |
+
+Rows already present (matched by normalized URL, or by company + role) are
+skipped, so re-runs propose nothing new. The proposed table is passed through
+`validate_table.py` before the PR opens, so a regex or API change can never
+produce a malformed table.
+
+**Adding a company:** find its public board token — Greenhouse boards answer at
+`boards-api.greenhouse.io/v1/boards/<token>/jobs`, Lever at
+`api.lever.co/v0/postings/<token>` — and append an entry to `sources.json`.
+No code changes needed.
+
+## Design rule
+
+Every automation here **proposes; a human disposes.** Bots open issues and pull
+requests, never commit to `main`. Discovered listings are unverified until a
+maintainer reviews them, which is why they arrive as a PR rather than a commit.
 
 ## Key operational choices
 

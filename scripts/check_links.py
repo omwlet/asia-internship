@@ -15,6 +15,10 @@ import sys
 
 import requests
 
+# Windows consoles default to cp1252 and would crash on the em dash / emoji.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
 CLOSED_PHRASES = [
     "no longer accepting",
     "position has been filled",

@@ -1,0 +1,11 @@
+{
+  "_comment": "Job boards polled by scripts/discover_listings.py. Add a company by finding its public ATS board token: Greenhouse boards live at boards-api.greenhouse.io/v1/boards/<token>/jobs, Lever at api.lever.co/v0/postings/<token>. Only add boards that respond publicly.",
+  "sources": [
+    { "company": "Agoda", "ats": "greenhouse", "token": "agoda" },
+    { "company": "Xendit", "ats": "greenhouse", "token": "xendit" },
+    { "company": "Mercari", "ats": "greenhouse", "token": "mercari" },
+    { "company": "Thoughtworks", "ats": "greenhouse", "token": "thoughtworks" },
+    { "company": "GoTo (Gojek & Tokopedia)", "ats": "lever", "token": "GoToGroup" },
+    { "company": "Ninja Van", "ats": "lever", "token": "ninjavan" }
+  ]
+}

@@ -1,0 +1,59 @@
+name: Discover New Listings
+
+on:
+  schedule:
+    - cron: "0 3 * * 4"   # Thursdays 03:00 UTC — offset from the Monday link check
+  workflow_dispatch:
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Search job boards for new internships
+        id: discover
+        run: |
+          python scripts/discover_listings.py --write | tee report.txt
+          {
+            echo "report<<EOF"
+            cat report.txt
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+          rm report.txt
+
+      # Guards against a bad regex or API change proposing a malformed table.
+      - name: Validate the proposed table
+        run: python scripts/validate_table.py
+
+      - name: Open PR with proposed listings
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "Add newly discovered internships from ATS job boards"
+          title: "🆕 Proposed listings from job board sweep"
+          body: |
+            Found on the public Greenhouse/Lever boards in
+            [`scripts/sources.json`](../blob/main/scripts/sources.json):
+
+            ```
+            ${{ steps.discover.outputs.report }}
+            ```
+
+            Each row was filtered for **internship + tech + Asia/remote** and
+            checked against the existing table, but nothing here is verified by
+            a human yet. Before merging, confirm each posting is a genuine 2026
+            tech internship and that the link opens the real application page.
+            Delete any row that does not belong.
+          branch: auto/new-listings
+          delete-branch: true
+          labels: new-listing, automated-report

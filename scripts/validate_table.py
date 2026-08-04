@@ -8,6 +8,10 @@ rules described in CONTRIBUTING.md; exits 0 when the table is clean.
 import re
 import sys
 
+# Windows consoles default to cp1252 and would crash on the status emoji.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
 DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 LINK = re.compile(r"\[[^\]]+\]\((https?://[^)\s]+)\)")
 STATUS_EMOJI = ("\U0001f7e2", "\U0001f7e1", "\U0001f534")  # green, yellow, red
