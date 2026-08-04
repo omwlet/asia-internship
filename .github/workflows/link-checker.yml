@@ -25,8 +25,21 @@ jobs:
             --timeout 20
             --user-agent "Mozilla/5.0 (compatible; InternshipLinkChecker/1.0)"
             --accept 200,203,206,301,302,308,403,429
+            --exclude "issues/new/choose"
             README.md
           fail: false
+
+      # Keep at most one open report: stale ones are noise, and the newest
+      # run always supersedes them.
+      - name: Close superseded link reports
+        if: steps.lychee.outputs.exit_code != 0
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue list --repo "$GITHUB_REPOSITORY" --state open \
+            --label automated-report --json number --jq '.[].number' \
+            | xargs -r -I{} gh issue close {} --repo "$GITHUB_REPOSITORY" \
+                --comment "Superseded by a newer link-check report."
 
       - name: Open issue if broken links found
         if: steps.lychee.outputs.exit_code != 0
