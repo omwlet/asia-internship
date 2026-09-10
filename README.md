@@ -18,6 +18,14 @@ A community-maintained list of **2026 tech internships** located in **Asia** or 
 
 | Company | Role | Location | Application Link / Status | Date Posted |
 |---------|------|----------|---------------------------|-------------|
+| Xendit | Data / ML Automation Intern | 🇮🇩 Jakarta, Indonesia | 🟢 [Apply](https://job-boards.greenhouse.io/xendit/jobs/7821208003) | 2026-09-10 |
+| Xendit | Full Stack Developer Intern | 🇮🇩 Jakarta, Indonesia | 🟢 [Apply](https://job-boards.greenhouse.io/xendit/jobs/7821207003) | 2026-09-10 |
+| GoTo (Gojek & Tokopedia) | AI Linguistic Voice Intern | 🇮🇩 Jakarta, Indonesia | 🟢 [Apply](https://jobs.lever.co/GoToGroup/63930a77-80c3-40ad-a933-a6aff7dac3ac) | 2026-09-10 |
+| GoTo (Gojek & Tokopedia) | Data Analyst Intern | 🇮🇩 Jakarta, Indonesia | 🟢 [Apply](https://jobs.lever.co/GoToGroup/f3566bb7-f2fd-4aef-bf2d-a1e0108d24e3) | 2026-09-10 |
+| GoTo (Gojek & Tokopedia) | Data Scientist Intern | 🇮🇩 Jakarta, Indonesia | 🟢 [Apply](https://jobs.lever.co/GoToGroup/816f2d4c-5ff6-4e83-8697-9c25df599409) | 2026-09-10 |
+| GoTo (Gojek & Tokopedia) | Data Scientist Intern | 🇮🇩 Jakarta, Indonesia | 🟢 [Apply](https://jobs.lever.co/GoToGroup/dff2a165-d111-4542-bfec-ec3856892275) | 2026-09-10 |
+| GoTo (Gojek & Tokopedia) | Data Scientist Intern | 🇮🇩 Jakarta, Indonesia | 🟢 [Apply](https://jobs.lever.co/GoToGroup/ede7763a-77c1-45b5-9ae5-86fdbd1c1af0) | 2026-09-10 |
+| Ninja Van | Internship (IT) | 🇲🇾 Subang Jaya, Malaysia | 🟢 [Apply](https://jobs.lever.co/ninjavan/134f70fa-94ec-4028-80ad-6e240e3c9802) | 2026-09-10 |
 | Shopee | Data Analytics & AI Automation Intern | 🇹🇭 Bangkok, Thailand | 🟢 [Apply](https://careers.shopee.co.th/job-detail/J02162462/1) | 2026-07-08 |
 | Rakuten | TECH Camp — Summer Long-term Internship 2026 (SWE, Infra, Data, Security) | 🇯🇵 Japan | 🟡 [Apply by 2026-07-15](https://global.rakuten.com/corp/careers/graduates/event/) | 2026-07-07 |
 | Agoda | Full-Stack Software Engineering Intern (Summer 2026) | 🇹🇭 Bangkok, Thailand | 🟢 [Apply](https://careersatagoda.com/job/7366718-summer-internship-2026-full-stack-internship-bkk/) | 2026-07-07 |
