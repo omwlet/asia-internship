@@ -18,6 +18,11 @@ A community-maintained list of **2026 tech internships** located in **Asia** or 
 
 | Company | Role | Location | Application Link / Status | Date Posted |
 |---------|------|----------|---------------------------|-------------|
+| Thoughtworks | Software Procurement Intern | 🇮🇳 Gurgaon, India | 🟢 [Apply](https://www.thoughtworks.com/careers/jobs/8236673?gh_jid=8236673) | 2026-10-15 |
+| GoTo (Gojek & Tokopedia) | Data Analyst Intern | 🇮🇩 Jakarta, Indonesia | 🟢 [Apply](https://jobs.lever.co/GoToGroup/f3566bb7-f2fd-4aef-bf2d-a1e0108d24e3) | 2026-10-15 |
+| GoTo (Gojek & Tokopedia) | Data Scientist Intern | 🇮🇩 Jakarta, Indonesia | 🟢 [Apply](https://jobs.lever.co/GoToGroup/816f2d4c-5ff6-4e83-8697-9c25df599409) | 2026-10-15 |
+| GoTo (Gojek & Tokopedia) | Data Scientist Intern | 🇮🇩 Jakarta, Indonesia | 🟢 [Apply](https://jobs.lever.co/GoToGroup/dff2a165-d111-4542-bfec-ec3856892275) | 2026-10-15 |
+| Ninja Van | Internship (IT) | 🇲🇾 Subang Jaya, Malaysia | 🟢 [Apply](https://jobs.lever.co/ninjavan/134f70fa-94ec-4028-80ad-6e240e3c9802) | 2026-10-15 |
 | Shopee | Data Analytics & AI Automation Intern | 🇹🇭 Bangkok, Thailand | 🟢 [Apply](https://careers.shopee.co.th/job-detail/J02162462/1) | 2026-07-08 |
 | Rakuten | TECH Camp — Summer Long-term Internship 2026 (SWE, Infra, Data, Security) | 🇯🇵 Japan | 🟡 [Apply by 2026-07-15](https://global.rakuten.com/corp/careers/graduates/event/) | 2026-07-07 |
 | Agoda | Full-Stack Software Engineering Intern (Summer 2026) | 🇹🇭 Bangkok, Thailand | 🟢 [Apply](https://careersatagoda.com/job/7366718-summer-internship-2026-full-stack-internship-bkk/) | 2026-07-07 |
