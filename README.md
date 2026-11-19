@@ -18,6 +18,25 @@ A community-maintained list of **2026 tech internships** located in **Asia** or 
 
 | Company | Role | Location | Application Link / Status | Date Posted |
 |---------|------|----------|---------------------------|-------------|
+| Agoda | [Cooperative Internship 2027] Back-end Internship BKK | 🇹🇭 Bangkok based, Thailand | 🟢 [Apply](https://job-boards.greenhouse.io/agoda/jobs/8335928) | 2026-11-19 |
+| Agoda | [Cooperative Internship 2027] Data Internship BKK | 🇹🇭 Bangkok based, Thailand | 🟢 [Apply](https://job-boards.greenhouse.io/agoda/jobs/8335925) | 2026-11-19 |
+| Agoda | [Cooperative Internship 2027] Data Pipeline Intern BKK | 🇹🇭 Bangkok based, Thailand | 🟢 [Apply](https://job-boards.greenhouse.io/agoda/jobs/8358205) | 2026-11-19 |
+| Agoda | [Cooperative Internship 2027] Data Platform Intern, Devops | 🇹🇭 Bangkok based, Thailand | 🟢 [Apply](https://job-boards.greenhouse.io/agoda/jobs/8358246) | 2026-11-19 |
+| Agoda | [Cooperative Internship 2027] Full-stack Internship BKK | 🇹🇭 Bangkok based, Thailand | 🟢 [Apply](https://job-boards.greenhouse.io/agoda/jobs/8358252) | 2026-11-19 |
+| Agoda | [Cooperative Internship 2027] Infrastructure Internship BKK | 🇹🇭 Bangkok, Thailand | 🟢 [Apply](https://job-boards.greenhouse.io/agoda/jobs/8335941) | 2026-11-19 |
+| Agoda | [Cooperative Internship 2027] Security Analyst Intern, Security team | 🇹🇭 Bangkok, Thailand | 🟢 [Apply](https://job-boards.greenhouse.io/agoda/jobs/8305482) | 2026-11-19 |
+| Agoda | [Summer Internship 2027] Back-end Internship BKK | 🇹🇭 Bangkok based, Thailand | 🟢 [Apply](https://job-boards.greenhouse.io/agoda/jobs/8358244) | 2026-11-19 |
+| Agoda | [Summer Internship 2027] Back-end Internship BKK, GPT Tools | 🇹🇭 Bangkok based, Thailand | 🟢 [Apply](https://job-boards.greenhouse.io/agoda/jobs/8355555) | 2026-11-19 |
+| Agoda | [Summer Internship 2027] CEG Data Analytics Intern (Bangkok Based) | 🇹🇭 Bangkok, Thailand | 🟢 [Apply](https://job-boards.greenhouse.io/agoda/jobs/8335899) | 2026-11-19 |
+| Agoda | [Summer Internship 2027] Data Internship BKK | 🇹🇭 Bangkok based, Thailand | 🟢 [Apply](https://job-boards.greenhouse.io/agoda/jobs/8358247) | 2026-11-19 |
+| Agoda | [Summer Internship 2027] Data Platform Intern, Devops | 🇹🇭 Bangkok based, Thailand | 🟢 [Apply](https://job-boards.greenhouse.io/agoda/jobs/8335927) | 2026-11-19 |
+| Agoda | [Summer Internship 2027] Full-stack Internship BKK | 🇹🇭 Bangkok based, Thailand | 🟢 [Apply](https://job-boards.greenhouse.io/agoda/jobs/8335922) | 2026-11-19 |
+| Agoda | [Summer Internship 2027] Infrastructure Internship BKK | 🇹🇭 Bangkok, Thailand | 🟢 [Apply](https://job-boards.greenhouse.io/agoda/jobs/8358261) | 2026-11-19 |
+| Agoda | [Summer Internship 2027] Supply Analytics Intern | 🇹🇭 Bangkok, Thailand | 🟢 [Apply](https://job-boards.greenhouse.io/agoda/jobs/8358027) | 2026-11-19 |
+| Agoda | [Summer Internship 2027] Supply Full-stack Internship BKK | 🇹🇭 Bangkok based, Thailand | 🟢 [Apply](https://job-boards.greenhouse.io/agoda/jobs/8335924) | 2026-11-19 |
+| GoTo (Gojek & Tokopedia) | Data Scientist Intern | 🇮🇩 Jakarta, Indonesia | 🟢 [Apply](https://jobs.lever.co/GoToGroup/816f2d4c-5ff6-4e83-8697-9c25df599409) | 2026-11-19 |
+| Ninja Van | Intern - Retail Network Management | 🇲🇾 Subang Jaya, Malaysia | 🟢 [Apply](https://jobs.lever.co/ninjavan/c0b2b24f-d19d-44ef-b12e-2961009c4aa5) | 2026-11-19 |
+| Ninja Van | Internship (IT) | 🇲🇾 Subang Jaya, Malaysia | 🟢 [Apply](https://jobs.lever.co/ninjavan/134f70fa-94ec-4028-80ad-6e240e3c9802) | 2026-11-19 |
 | Shopee | Data Analytics & AI Automation Intern | 🇹🇭 Bangkok, Thailand | 🟢 [Apply](https://careers.shopee.co.th/job-detail/J02162462/1) | 2026-07-08 |
 | Rakuten | TECH Camp — Summer Long-term Internship 2026 (SWE, Infra, Data, Security) | 🇯🇵 Japan | 🟡 [Apply by 2026-07-15](https://global.rakuten.com/corp/careers/graduates/event/) | 2026-07-07 |
 | Agoda | Full-Stack Software Engineering Intern (Summer 2026) | 🇹🇭 Bangkok, Thailand | 🟢 [Apply](https://careersatagoda.com/job/7366718-summer-internship-2026-full-stack-internship-bkk/) | 2026-07-07 |
